@@ -462,9 +462,9 @@ body{
 .form_suscribite{
     
 
-    width: 90%;
+    width: 100%;
     padding: 15px;
-    background-color:rgba(245, 245, 245, 0.767);
+   
     padding: 20px;
     border-radius: 18px;
     /* display: flex;
@@ -745,7 +745,7 @@ header:hover .contenedor_logo .logo_normal {
     background-color: #A19766;
     color: white;
     border: solid 1px #A19766;
-    width: 100%;
+    width: 50%;
     border-radius: 0;
     font-size: 0.9rem; 
     
@@ -754,7 +754,7 @@ header:hover .contenedor_logo .logo_normal {
     background-color: #5a5124;
     color: white;
     border: solid 1px #A19766;
-    width: 100%;
+    width: 50%;
     font-size: 0.9rem; 
     
 }
@@ -763,7 +763,7 @@ header:hover .contenedor_logo .logo_normal {
     background-color: #A19766;
     color: white;
     border: solid 1px #A19766;
-    width: 100%;
+    width: 60%;
     border-radius: 0;
     font-size: 0.9rem; 
     
@@ -772,7 +772,7 @@ header:hover .contenedor_logo .logo_normal {
     background-color: #5a5124;
     color: white;
     border: solid 1px #A19766;
-    width: 100%;
+    width: 60%;
     font-size: 0.9rem;
     
 }
@@ -811,29 +811,26 @@ header:hover .contenedor_logo .logo_normal {
 }
 
 
-.form_suscribite{
-    
-
-    width: 90%;
-    padding: 15px;
-    background-color:rgba(245, 245, 245, 0.767);
-    padding: 20px;
-    border-radius: 18px;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
+.boton_suscribirse{
+    height: 50%;
 }
 
 
 .contenedor30{
-    width: 30%;
-    padding: 10px
+    width: 40%;
+    padding: 10px;
+    margin-left: 46px;
 
 }
 
+.contenedor30_izquierda{
+    width: 40%;
+    padding: 10px;
+    margin-right: 46px;
+}
+
 .contenedor70{
-    width: 70%;
+    width: 55%;
 
 }
 .contenedor70 img{
