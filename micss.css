@@ -1,0 +1,778 @@
+@font-face {
+    font-family: 'book';
+    src: url('fonts/BookAntiquaFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.dorado{
+    color: #A19766;
+}
+
+section{
+    margin-bottom: 35px;
+}
+
+.gris_logo{
+    color: #302E31;
+}
+
+h1{
+    color: black;
+    font-size: 2rem;
+    cursor: default;
+    font-family: "book",sans-serif;
+    letter-spacing: 5px;
+    padding-left: 3px;
+}
+
+.tipografia_book{
+    font-family: "book",sans-serif;
+    font-weight: bold;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*------------------------------------------------------HEADER-------------------------------*/
+.bg_gris{
+    background-color: #302E31 !important;
+}
+/* header{
+    color: black !important;
+    background-color: transparent!important;
+}
+header:hover{
+    background-color: #302E31;
+    color: white;
+} */
+
+
+/*------------------------------------------------------------------------*/
+.contenedor_logo_mobile{
+    width: 45%;
+    height: 45%;
+    
+    
+}
+
+
+.contenedor_logo_mobile img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_logo{
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor_logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_video {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; /* Para asegurarse de que el video no se desborde */
+    position: relative; /* Importante para posicionar correctamente el video */
+}
+
+.video_fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cubrir todo el contenedor sin deformar */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 
+MEDIDAS DEL VIDEO
+
+.contenedor_video {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+.video_fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
+.contenedor_formulario{
+    background-color: rgba(245, 245, 245, 0.767);
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 17%;
+    padding: 20px;
+}
+
+
+
+.div_boton{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+
+}
+
+.div_boton button{
+    width: 300px;
+    height: 40px;
+    border-radius: 19px;
+    border: none;
+    background-color: #A19766;
+    
+    color: white;
+    box-shadow: 1px 2px 5px 1px #0000008c;
+}
+.div_boton button:hover{
+    box-shadow: 3px 4px 5px 1px #0000008c;
+    border: 1px whitesmoke solid;
+   
+}
+
+.btn_nav{
+    color: black;
+    border: solid 1px #a19766;
+
+}
+.btn_nav:hover{
+    color: white;
+    border: solid 1px white;
+}
+
+/*--------------------------------------------------------------BODY--------------------------------------------------*/
+body{
+    /* background-image: url(/img/trama/Trama.jpg); */
+    background-color: rgb(255 244 225 / 25%);
+    
+}
+
+.animacion{
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.logo_main_section{
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin-top: 50px;
+}
+
+.logo_main_section img{
+    width: 100%;
+    height: 100%;
+}
+
+.h2_finca{
+    margin-top: 65px;
+    font-size: 2.5rem;
+    font-family: "book",sans-serif;
+    
+}
+
+.contenedor_imagen_cabaña{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.contenedor_imagen_cabaña img{
+    width: 100%;
+    
+  
+}
+
+.btn_descubre{
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+    margin-top: 10px;
+
+    
+}
+
+.btn_descubre:hover{
+    background-color: #302E31;
+    color: white;
+}
+.btn_descubre_experiencias:hover{
+    background-color: #302E31;
+    color: white;
+}
+
+/*------------------------------------SWIPPER------------------------------------------------------------------------------------------*/
+
+.contendor_swiper{
+    min-height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006); */
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .a_swipper_wine{
+    position: absolute;
+    top: 77%;
+    left: 4%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+    text-align: center;
+    
+
+  }
+  .a_swipper_sunset{
+    position: absolute;
+    top: 77%;
+    left: 16%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+
+  }
+
+  .a_swipper_menu{
+    position: absolute;
+    top: 77%;
+    left: 12.5%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_pic{
+    position: absolute;
+    top: 77%;
+    left: 32.5%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_cabalgata{
+    position: absolute;
+    top: 77%;
+    left: 17%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_bici{
+    position: absolute;
+    top: 77%;
+    left: 22%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  footer{
+    background-color: #302E31;
+    color: white;
+  }
+
+
+
+  .contenedor_logo_footer{
+    width: 30%;
+    height: 100%;
+  }
+
+  .contenedor_logo_footer img{
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+  .contenedor_iconos_footer a{
+    color: white;
+    text-decoration: none;
+  }
+  .contenedor_iconos_footer a:hover{
+    color: #A19766;
+    text-decoration: none;
+  }
+
+  .iconos a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: transparent;
+    margin: 5px;
+    
+}
+
+  .iconos a:hover{
+   background-color: #A19766;
+    
+}
+
+.iconos i{
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+.nav-item{
+    padding-left: 10px;
+}
+
+
+.contenedor_nosotros{
+    margin-top: 8%;
+}
+
+.contenedor_video_suscripcion{
+    width: 100%;
+    height: 300px;
+}
+.contenedor_video_suscripcion iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.form_suscribite button{
+    background-color: #A19766;
+    border: 1px #A19766 solid;
+   
+  
+
+}
+.form_suscribite button:hover{
+    background-color: transparent;
+    color: #A19766;
+    border: 1px #A19766 solid;
+}
+
+.form_suscribite input{
+    border: solid 1px #A19766;
+}
+
+/*---------------------------------------------------CARDS------------------------------------------------*/
+.contenedor_card{
+    border:none
+}
+
+.upper_title{
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+}
+
+.card_titulo{
+    font-size: 1.5rem;
+}
+
+.btn_card{
+    background-color: #A19766;
+    border: white solid 1px;
+    color: white;
+}
+.btn_card:hover{
+    background-color: transparent;
+    color: #A19766;
+    border: #A19766 1px solid;
+}
+
+.precio_card{
+    font-size: 1.5rem;
+}
+
+.precio_card_texto{
+    font-size: 1.2rem;
+    
+}
+
+.card_text{
+    min-height: 200px;
+}
+
+
+
+
+
+@media(min-width: 768px) and (max-width: 1199px){
+    .logo_desktop{
+    
+        left: 4%;
+        width: 100px;
+        height: 100px;
+    }
+    .logo_desktop img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+}
+
+@media(min-width: 1200px){
+
+   
+    .bg_gris{
+        background-color: transparent !important;
+    }
+    
+    .navbar {
+        
+        color: black !important;
+        background-color: transparent !important;
+        transition: color 0.3s ease, background-color 0.3s ease; 
+    }
+    
+    .navbar:hover {
+        
+        background-color: #302E31 !important;
+        color: white;
+    
+    } 
+    
+    header {
+        transition: color 0.3s ease, background-color 0.3s ease;
+        background-color: none;
+    }
+    
+    header:hover {
+        background-color: #302E31 !important;
+        color: white !important;
+    }
+    
+    header:hover h1,
+    header:hover .navbar .nav-link,
+    header:hover .navbar .navbar-brand,
+    header:hover .navbar-toggler-icon,
+    
+    header:hover .dropdown-item {
+        color: white !important;
+    }
+    
+    header .navbar .nav-link,
+    header .navbar .navbar-brand,
+    header .navbar-toggler-icon,
+    header .btn_nav,
+    header .dropdown-item {
+        color: black !important;
+        transition: color 0.3s ease;
+    }
+    header:hover .btn_nav{
+        color: #A19766 !important;
+    }
+    header:hover .btn_nav:hover{
+        background-color: #A19766 !important;
+        color: #302E31 !important;
+        border: none;
+    }
+
+    header:hover .nav-link:hover{
+        color: #A19766 !important;
+    }
+    header:hover .dropdown-item:hover{
+        color: #A19766 !important;
+    }
+    
+    header .dropdown-menu {
+        background-color: #302E31; /* Mantener coherencia con el color de fondo en hover */
+    }
+    
+    header .dropdown-item:hover {
+        background-color: #302E31;
+        color: white !important;
+    }
+
+
+/* Estilos para el contenedor del logo */
+.contenedor_logo {
+    width: 90px;
+    height: 90px;
+    position: relative; /* Para posicionar las imágenes */
+    overflow: hidden; /* Para recortar cualquier parte de la imagen que se desborde */
+}
+
+/* Estilos para las imágenes del logo */
+.contenedor_logo img {
+    width: 100%; /* Para ocupar todo el espacio del contenedor */
+    height: 100%; /* Para ocupar todo el espacio del contenedor */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    position: absolute; /* Posición absoluta para superponer las imágenes */
+    top: 0; /* Ajuste superior */
+    left: 7%; /* Ajuste izquierdo */
+}
+
+/* Ocultar la imagen de hover por defecto */
+.contenedor_logo .logo_hover {
+    opacity: 0;
+}
+
+/* Mostrar la imagen de hover cuando se hace hover en el header */
+header:hover .contenedor_logo .logo_hover {
+    opacity: 1;
+}
+
+/* Reducir la opacidad de la imagen normal cuando se hace hover en el header */
+header:hover .contenedor_logo .logo_normal {
+    opacity: 0;
+}
+    
+    
+.contenedor_de_links{
+    position: relative;
+}
+
+.contenedor_botones_nav{
+    position: absolute;
+    left:88%;
+    top: -138%;
+}
+/* 
+.contenedor_botones_nav{
+    position: absolute;
+    left:88%
+} */
+
+.nav-link:hover{
+    color: #A19766;
+}
+    
+.navbar .navbar-collapse {
+        justify-content: flex-end; /* Alinea los elementos del navbar a la derecha */
+    }
+
+.opciones_select{
+        width: 10%;
+    }
+    
+    
+.contenedor_formulario{
+    background-color:rgba(245, 245, 245, 0.767) ;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 80%;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.lineaBlanca {
+    width: 50%;
+    height: 1px; /* Altura de la línea */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)); /* Gradiente transparente */
+    margin: 0 auto; /* Centrar la línea horizontalmente */
+}
+
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    background: #000;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006); */
+  }
+
+  .a_swipper_wine{
+    position: absolute;
+    top: 81%;
+    left: 10%;
+    
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+    
+
+  }
+  .a_swipper_sunset{
+    position: absolute;
+    top: 81%;
+    left: 21%;
+    
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+
+  }
+
+  .a_swipper_menu{
+    position: absolute;
+    top: 81%;
+    left: 18%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_pic{
+    position: absolute;
+    top: 81%;
+    left: 35%;
+    
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_cabalgata{
+    position: absolute;
+    top: 81%;
+    left: 22%;
+    
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .a_swipper_bici{
+    position: absolute;
+    top: 81%;
+    left: 24%;
+    
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: #302E31 1px 1px 1px;
+  }
+
+  .btn_descubre{
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
+    width: 40%;
+    font-size: 0.9rem; 
+    
+}
+  .btn_descubre_experiencias{
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
+    width: 43%;
+    font-size: 0.9rem; 
+    
+}
+
+.logo_desktop{
+    
+    left: 4%;
+    width: 100px;
+    height: 100px;
+}
+.logo_desktop img{
+    width: 100%;
+    height: 100%;
+}
+
+#direccion{
+    margin-right: 37px;
+}
+    
+
+.contenedor_nosotros{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+.seccion_footer{
+    padding-top: 2%;
+}
+
+.encabezados_footer{
+    font-size: 1.5rem;
+}
+
+
+.card_tamaños{
+
+}
+
+}
+
+

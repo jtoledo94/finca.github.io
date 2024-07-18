@@ -1,0 +1,51 @@
+[
+    {
+        "id" : 1,
+        "upperT":"Descubrimiento",
+        "title" : "Wine Experience",
+        "info": "Experiencia guiada",
+        "precio": 45,
+        "img":"../img/experiencias/wine_mobile.jpg"
+        
+    },
+    {
+        "id" : 2,
+        "upperT":"Descubrimiento",
+        "title" : "Wine Sunset Experience",
+        "info": "Cata al atardecer",
+        "precio": 40,
+        "img":"../img/experiencias/wine_sunset_mobile.jpg"
+    },
+    {
+        "id" : 3,
+        "upperT":"Descubrimiento",
+        "title" : "Menu de 3 pasos",
+        "info": "Almuerzo con maridaje",
+        "precio": 45,
+        "img":"../img/experiencias/menu_3_pasos_mobile.jpg"
+    },
+    {
+        "id" : 4,
+        "upperT":"Descubrimiento",
+        "title" : "Pic Nic",
+        "info": "Para mayores de 18 años con costo adicional",
+        "precio": 45,
+        "img":"../img/experiencias/pic_mobile.jpg"
+    },
+    {
+        "id" : 5,
+        "upperT":"Aventura",
+        "title" : "Cabalgatas",
+        "info": "Cabalgatas en la Finca con reserva previa",
+        "precio": "Con costo adicional",
+        "img":"../img/experiencias/wine_mobile.jpg"
+    },
+    {
+        "id" : 6,
+        "upperT":"Aventura",
+        "title" : "Bicicletas",
+        "info": "Bicicletas a su disposición de 8 a 20hs",
+        "precio": "Sin costo",
+        "img":"../img/experiencias/wine_mobile.jpg"
+    }
+]
