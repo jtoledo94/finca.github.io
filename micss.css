@@ -459,6 +459,20 @@ body{
 }
 
 
+.form_suscribite{
+    
+
+    width: 90%;
+    padding: 15px;
+    background-color:rgba(245, 245, 245, 0.767);
+    padding: 20px;
+    border-radius: 18px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
 
 
 
@@ -769,9 +783,23 @@ header:hover .contenedor_logo .logo_normal {
 }
 
 
-.card_tamaños{
+.form_suscribite{
+    
 
+    width: 90%;
+    padding: 15px;
+    background-color:rgba(245, 245, 245, 0.767);
+    padding: 20px;
+    border-radius: 18px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
 }
+
+
+
+
 
 }
 

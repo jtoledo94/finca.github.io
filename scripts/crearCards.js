@@ -82,10 +82,10 @@ const crearCards = (data) => {
         div_footer.appendChild(contenedor_ver_mas)
 
         let btn = document.createElement("a");
-        btn.src = "#"
+        btn.href = `detalle.html?id=${producto.id}`;  // Redirigir a detalle.html con el ID del producto
         btn.classList.add("btn", "btn_card");
-        btn.innerHTML = "Ver más"
-        contenedor_ver_mas.appendChild(btn)
+        btn.innerHTML = "Ver más";
+        contenedor_ver_mas.appendChild(btn);
 
         let div_contenedor_precio = document.createElement("div")
         div_contenedor_precio.classList.add("col-6");

@@ -397,19 +397,27 @@
                 <h2 class="text-center tipografia_book">No te pierdas ninguna de nuestras noticias y suscribite</h2>
             </div>
             <div class="mt-5 row">
-                <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center mb-3 ">
+                <div class="col-12 col-sm-6 d-flex flex-column align-items-center  mb-3 ">
                     <p class="roboto-regular">Suscribite y disfrutá los mejores beneficios.</p>
                     
-                    <div class="form_suscribite">
+                    <div class="form_suscribite ">
                         <form action="#" method="post">
-                            <!-- <label for="email">Email:</label> -->
-                            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
-                            <button type="submit" class="btn btn-primary">Suscribirse</button>
+                            <div class="d-flex flex-column contenedor_inputs_suscripcion">
+                                
+                                <label for="nombre" class="form-label roboto-regular">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" class="mb-2 form-control" required placeholder="Tu nombre">
+    
+                                <label for="email" class="form-label roboto-regular">Email</label>
+                                <input type="email" id="email" name="email" class="mb-2 form-control" required placeholder="Tu correo electrónico">
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class="btn btn-primary">Suscribirse</button>
+                            </div>
                         </form>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 d-none d-sm-block">
                     <div class="contenedor_video_suscripcion">
                         <iframe src="https://www.youtube.com/embed/6-nAYx3wUUw?si=XnbPZmyyxVuUCIoz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
