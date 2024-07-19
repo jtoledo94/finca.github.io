@@ -34,6 +34,11 @@ h1{
 
 .tipografia_book{
     font-family: "book",sans-serif;
+    
+}
+
+.tipografia_book_bold{
+    font-family: "book",sans-serif;
     font-weight: bold;
 }
 
@@ -155,7 +160,8 @@ MEDIDAS DEL VIDEO
 }
 .div_boton button:hover{
     box-shadow: 3px 4px 5px 1px #0000008c;
-    border: 1px whitesmoke solid;
+    background-color: #716731;
+    
    
 }
 
@@ -224,7 +230,7 @@ body{
     
 }
   .btn_descubre:hover{
-    background-color: #5a5124;
+    background-color: #716731;
     color: white;
     border: solid 1px #A19766;
     width: 100%;
@@ -242,7 +248,7 @@ body{
     
 }
   .btn_descubre_experiencias:hover{
-    background-color: #5a5124;
+    background-color: #716731;
     color: white;
     border: solid 1px #A19766;
     width: 100%;
@@ -355,8 +361,9 @@ body{
 
 
   .contenedor_logo_footer{
-    width: 30%;
+    width: 40%;
     height: 100%;
+    
   }
 
   .contenedor_logo_footer img{
@@ -368,6 +375,7 @@ body{
   .contenedor_iconos_footer a{
     color: white;
     text-decoration: none;
+    font-size: 16px;
   }
   .contenedor_iconos_footer a:hover{
     color: #A19766;
@@ -495,14 +503,23 @@ body{
 }
 
 
-.contenedor_imagen_detalle{
-   
-}
 
+/*Página detalles.html*/
 .contenedor_imagen_detalle img{
     width: 100%;
 }
 
+
+.contenedor_footer{
+    width: calc(100%);
+    margin-top: 20px;
+   
+}
+
+
+.gift_mobile{
+    padding-left: 70px;
+}
 
 
 @media(min-width: 768px) and (max-width: 1199px){
@@ -766,36 +783,27 @@ header:hover .contenedor_logo .logo_normal {
   }
 
   .btn_descubre{
-    background-color: #A19766;
-    color: white;
-    border: solid 1px #A19766;
+   
     width: 50%;
     border-radius: 0;
     font-size: 0.9rem; 
     
 }
   .btn_descubre:hover{
-    background-color: #5a5124;
-    color: white;
-    border: solid 1px #A19766;
+    
     width: 50%;
     font-size: 0.9rem; 
     
 }
   .btn_descubre_experiencias{
    
-    background-color: #A19766;
-    color: white;
-    border: solid 1px #A19766;
     width: 60%;
     border-radius: 0;
     font-size: 0.9rem; 
     
 }
   .btn_descubre_experiencias:hover{
-    background-color: #5a5124;
-    color: white;
-    border: solid 1px #A19766;
+    
     width: 60%;
     font-size: 0.9rem;
     
@@ -863,6 +871,23 @@ header:hover .contenedor_logo .logo_normal {
 
 }
 
+.contenedor_redes{
+    padding-left: 0;
+    margin-top: 2%;
+}
+
+.contenedor_footer{
+    width: calc(25% - 40px);
+    margin: 20px;
+}
+
+.contenedor_intereses{
+    padding-left: 0;
+}
+
+.form_suscribite{
+    padding-left: 0;
+}
 
 }
 
