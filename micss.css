@@ -219,6 +219,16 @@ body{
     
   
 }
+.contenedor_imagen_cabaña2{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.contenedor_imagen_cabaña2 img{
+    width: 100%;
+    
+  
+}
 
 .btn_descubre{
     background-color: #A19766;
@@ -246,6 +256,7 @@ body{
     width: 100%;
     border-radius: 0;
     font-size: 0.9rem; 
+    margin-bottom: 25px
     
 }
   .btn_descubre_experiencias:hover{
@@ -522,8 +533,13 @@ body{
     padding-left: 70px;
 }
 
+.swiper-button-next{
+    color: rgb(211, 209, 209);
+}
 
-
+.swiper-button-prev{
+    color: rgb(211, 209, 209);
+}
 
 @media(min-width: 768px) and (max-width: 1199px){
     .logo_desktop{
@@ -850,6 +866,10 @@ header:hover .contenedor_logo .logo_normal {
 .boton_suscribirse{
     height: 50%;
 }
+.boton_suscribirse:hover{
+    height: 50%;
+}
+
 
 
 .contenedor30{
