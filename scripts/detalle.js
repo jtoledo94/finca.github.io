@@ -23,15 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('Producto encontrado:', producto);
 
             let contenedor_filas = document.createElement("div")
-            contenedor_filas.classList.add("row","mt-5")
+            contenedor_filas.classList.add("row", "mt-5")
             productoDetalleElement.appendChild(contenedor_filas)
 
             let contenedor_texto = document.createElement("div")
-            contenedor_texto.classList.add("col-12","col-md-6")
+            contenedor_texto.classList.add("col-12", "col-md-6")
             contenedor_filas.appendChild(contenedor_texto)
 
             let titulo = document.createElement("h2")
             titulo.innerText = producto.title
+            titulo.classList.add("tipografia_book", "mb-5")
             contenedor_texto.appendChild(titulo)
 
             let contenedor_ul = document.createElement("div")
@@ -42,40 +43,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
             producto.detalles.forEach(element => {
               let li = document.createElement("li")
-              li.innerHTML= element.descripcion
+              li.innerHTML = element.descripcion
               ul.appendChild(li)
             });
-            
-            let contenedor_imagen = document.createElement("div")
-            contenedor_imagen.classList.add("col-12","col-md-6","contenedor_imagen_detalle")
-            contenedor_filas.appendChild(contenedor_imagen)
 
-            let imagen = document.createElement("img")
-            imagen.src=producto.img
-            imagen.alt=producto.title
-            contenedor_imagen.appendChild(imagen)
+             let contenedor_imagen = document.createElement("div")
+             contenedor_imagen.classList.add("col-12","col-md-6","contenedor_imagen_detalle")
+             contenedor_filas.appendChild(contenedor_imagen)
+ 
+             let imagen = document.createElement("img")
+             imagen.src=producto.img
+             imagen.alt=producto.title
+             contenedor_imagen.appendChild(imagen) 
+           /*  let contenedor_swiper = document.createElement("div")
+            contenedor_swiper.classList.add("col-12", "col-md-6")
+            contenedor_filas.appendChild(contenedor_swiper)
+
+            let swiper = document.createElement("div")
+            swiper.classList.add("swipe")
+            contenedor_swiper.appendChild(swiper)
+
+            let swiper_wrapper = document.createElement("div")
+            swiper_wrapper.classList.add("swipper-wrapper")
+            swiper.appendChild(swiper_wrapper)
+
+            producto.carrusel.forEach(imagen => {
+              let swiper_slide = document.createElement("div")
+              swiper_slide.classList.add("swiper-slide")
+              swiper_wrapper.appendChild(swiper_slide)
+
+              let img_swipper = document.createElement("img")
+              img_swipper.src=imagen.src
+              swiper_slide.appendChild(img_swipper)
+            })
+
+            let swiper_prev = document.createElement("div")
+            swiper_prev.classList.add("swiper-button-prev")
+            swiper.appendChild(swiper_prev)
+
+            let swiper_next = document.createElement("div")
+            swiper_next.classList.add("swiper-button-next")
+            swiper.appendChild(swiper_next)
+ */
 
 
-           /*  productoDetalleElement.innerHTML = `
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <ul>
-                        ${producto.detalles}.foreach((item)=>{
-                            <li>${item.descripcion} </li>
-                          })
-                      </ul>
-                    </div>
-
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div>
-                      <img src="${producto.img}" alt="${producto.title}">
-                    </div>
-
-                  </div>
-                </div>
-              `; */
           } else {
             console.log('Producto no encontrado');
             productoDetalleElement.innerHTML = '<p>Producto no encontrado</p>';

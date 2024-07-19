@@ -16,6 +16,20 @@
             {
                 "descripcion": "Al finalizar el testing se brindará una degustación de 5 tapeos o Pic-nic entre las viñas a su elección (incluye agua saborizada con frutas de estación)"
             }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            }
         ]
         
     },
@@ -36,6 +50,20 @@
             {
                 "descripcion": "Ofrecemos con esto el uso de nuestras acogedoras instalaciones y el recorrido guiado por las viñas."
             }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_sunset_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_sunset_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_sunset_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_sunset_mobile.jpg"
+            }
         ]
     },
     {
@@ -51,6 +79,20 @@
             },
             {
                 "descripcion": "Al llegar a nuestras instalaciones será recibido en nuestro House con algún jugo de nuestros cítricos o aguas saborizadas. Ofrecemos con esto el uso de nuestras acogedoras instalaciones y el recorrido guiado por las viñas."
+            }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
             }
         ]
     },
@@ -74,6 +116,20 @@
             {
                 "descripcion": "tartas dulces de la variedad de la casa a elección aguas y jugos."
             }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            }
         ]
     },
     {
@@ -96,6 +152,20 @@
             {
                 "descripcion": "tartas dulces de la variedad de la casa a elección aguas y jugos."
             }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            }
         ]
     },
     {
@@ -108,6 +178,20 @@
         "detalles":[
             {
                 "descripcion": "Cuenta con bicicletas vintage para pasear en sus instalaciones, recorrer 20 hectáreas y viñedos de acceso para todo huésped o comensal."
+            }
+        ],
+        "carrusel":[
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
+            },
+            {
+                "src":"../img/experiencias/wine_mobile.jpg"
             }
         ]
     }

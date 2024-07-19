@@ -227,6 +227,7 @@ body{
     width: 100%;
     border-radius: 0;
     font-size: 0.9rem; 
+    margin-bottom: 25px;
     
 }
   .btn_descubre:hover{
@@ -522,6 +523,8 @@ body{
 }
 
 
+
+
 @media(min-width: 768px) and (max-width: 1199px){
     .logo_desktop{
     
@@ -787,6 +790,7 @@ header:hover .contenedor_logo .logo_normal {
     width: 50%;
     border-radius: 0;
     font-size: 0.9rem; 
+    margin-top: 7%;
     
 }
   .btn_descubre:hover{
@@ -871,6 +875,7 @@ header:hover .contenedor_logo .logo_normal {
 
 }
 
+
 .contenedor_redes{
     padding-left: 0;
     margin-top: 2%;
@@ -887,6 +892,10 @@ header:hover .contenedor_logo .logo_normal {
 
 .form_suscribite{
     padding-left: 0;
+}
+
+.contenedor_lugar_soñado{
+    margin-top: 140px;
 }
 
 }
