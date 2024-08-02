@@ -3,13 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     return params.get('id');
   }
-  let c = getQueryParams()
+
+  let c = getQueryParams();
   console.log("ID obtenido;", c);
 
   if (c) {
     cargarProducto(c);
   } else {
-    console.error("ID de producto no proporcionado")
+    console.error("ID de producto no proporcionado");
   }
 
   function cargarProducto(id) {
@@ -18,74 +19,82 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(data => {
         const producto = data.find(item => item.id === parseInt(id));
         const productoDetalleElement = document.getElementById('producto-detalle');
+        const contenedor_wrapper = document.getElementById("contenedor_wrapper");
+        const contenedor_wrapper2 = document.getElementById("contenedor_wrapper2");
+
         if (productoDetalleElement) {
           if (producto) {
             console.log('Producto encontrado:', producto);
 
-            let contenedor_filas = document.createElement("div")
-            contenedor_filas.classList.add("row", "mt-5")
-            productoDetalleElement.appendChild(contenedor_filas)
+            let contenedor_texto = document.createElement("div");
+            productoDetalleElement.appendChild(contenedor_texto);
 
-            let contenedor_texto = document.createElement("div")
-            contenedor_texto.classList.add("col-12", "col-md-6")
-            contenedor_filas.appendChild(contenedor_texto)
+            let titulo = document.createElement("h2");
+            titulo.innerText = producto.title;
+            titulo.classList.add("tipografia_book", "mb-5");
+            contenedor_texto.appendChild(titulo);
 
-            let titulo = document.createElement("h2")
-            titulo.innerText = producto.title
-            titulo.classList.add("tipografia_book", "mb-5")
-            contenedor_texto.appendChild(titulo)
-
-            let contenedor_ul = document.createElement("div")
+            let contenedor_ul = document.createElement("div");
             contenedor_texto.appendChild(contenedor_ul);
 
-            let ul = document.createElement("ul")
+            let ul = document.createElement("ul");
             contenedor_ul.appendChild(ul);
 
             producto.detalles.forEach(element => {
-              let li = document.createElement("li")
-              li.innerHTML = element.descripcion
-              ul.appendChild(li)
+              let li = document.createElement("li");
+              li.classList.add("mt-3")
+              li.innerHTML = element.descripcion;
+              ul.appendChild(li);
             });
 
-             let contenedor_imagen = document.createElement("div")
-             contenedor_imagen.classList.add("col-12","col-md-6","contenedor_imagen_detalle")
-             contenedor_filas.appendChild(contenedor_imagen)
- 
-             let imagen = document.createElement("img")
-             imagen.src=producto.img
-             imagen.alt=producto.title
-             contenedor_imagen.appendChild(imagen) 
-           /*  let contenedor_swiper = document.createElement("div")
-            contenedor_swiper.classList.add("col-12", "col-md-6")
-            contenedor_filas.appendChild(contenedor_swiper)
+            producto.carrusel.forEach(item => {
+              let swiper_slide = document.createElement("div");
+              swiper_slide.classList.add("swiper-slide");
 
-            let swiper = document.createElement("div")
-            swiper.classList.add("swipe")
-            contenedor_swiper.appendChild(swiper)
+              let slider_img = document.createElement("img");
+              slider_img.src = item.src;
+              swiper_slide.appendChild(slider_img);
+              contenedor_wrapper.appendChild(swiper_slide);
+            });
 
-            let swiper_wrapper = document.createElement("div")
-            swiper_wrapper.classList.add("swipper-wrapper")
-            swiper.appendChild(swiper_wrapper)
+            producto.carrusel.forEach(item => {
+              let swiper_slide = document.createElement("div");
+              swiper_slide.classList.add("swiper-slide");
 
-            producto.carrusel.forEach(imagen => {
-              let swiper_slide = document.createElement("div")
-              swiper_slide.classList.add("swiper-slide")
-              swiper_wrapper.appendChild(swiper_slide)
+              let slider_img = document.createElement("img");
+              slider_img.src = item.src;
+              swiper_slide.appendChild(slider_img);
+              contenedor_wrapper2.appendChild(swiper_slide);
+            });
 
-              let img_swipper = document.createElement("img")
-              img_swipper.src=imagen.src
-              swiper_slide.appendChild(img_swipper)
-            })
+            // Inicializar Swipers después de añadir las imágenes
+            var swiper = new Swiper(".mySwiper", {
+              loop: true,
+              spaceBetween: 10,
+              slidesPerView: 4,
+              freeMode: true,
+              watchSlidesProgress: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              }, 
+            });
 
-            let swiper_prev = document.createElement("div")
-            swiper_prev.classList.add("swiper-button-prev")
-            swiper.appendChild(swiper_prev)
-
-            let swiper_next = document.createElement("div")
-            swiper_next.classList.add("swiper-button-next")
-            swiper.appendChild(swiper_next)
- */
-
+            var swiper2 = new Swiper(".mySwiper2", {
+              loop: true,
+              spaceBetween: 10,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              thumbs: {
+                swiper: swiper,
+              },
+               autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              }, 
+            });
 
           } else {
             console.log('Producto no encontrado');
@@ -97,98 +106,4 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch(error => console.error('Error cargando el JSON:', error));
   }
-
-
-})
-
-
-
-
-
-
-
-
-/* // Este script se ejecuta cuando el DOM está completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
-    // Función para obtener los parámetros de la URL
-    function getQueryParams() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get('id');
-    }
-  
-    // Cargar datos del JSON y buscar el producto por ID
-    function cargarProducto(id) {
-      fetch('../data/datae.json')
-        .then(response => response.json())
-        .then(data => {
-          const producto = data.find(item => item.id === parseInt(id));
-          if (producto) {
-            console.log('Producto encontrado:', producto); // Imprimir la información del producto en la consola
-            document.getElementById('producto-detalle').innerText = JSON.stringify(producto, null, 2); // Mostrar la información del producto en el HTML
-          } else {
-            console.log('Producto no encontrado');
-            document.getElementById('producto-detalle').innerText = 'Producto no encontrado';
-          }
-        })
-        .catch(error => console.error('Error cargando el JSON:', error));
-    }
-  
-    // Obtener el ID del producto desde los parámetros de la URL
-    const id = getQueryParams();
-    if (id) {
-      cargarProducto(id);
-    } else {
-      document.getElementById('producto-detalle').innerText = 'ID de producto no proporcionado';
-    }
-  }); */
-
-
-
-
-
-
-/*
-document.addEventListener("DOMContentLoaded", function() {
-// Función para obtener los parámetros de la URL
-function getQueryParams() {
-  const params = new URLSearchParams(window.location.search);
-  return Object.fromEntries(params.entries());
-}
-
-// Cargar datos del JSON y mostrar el producto
-function cargarProducto(id) {
-  fetch('../data/datae.json')
-    .then(response => response.json())
-    .then(data => {
-      const producto = data.find(item => item.id === parseInt(id));
-      if (producto) {
-        mostrarProducto(producto);
-      } else {
-        document.getElementById('producto-detalle').innerHTML = 'Producto no encontrado';
-      }
-    })
-    .catch(error => console.error('Error cargando el JSON:', error));
-}
-
-// Mostrar los detalles del producto en la página
-function mostrarProducto(producto) {
-  const detalleContainer = document.getElementById('producto-detalle');
-  detalleContainer.innerHTML = `
-    <h1>${producto.title}</h1>
-    <p>${producto.descripcion}</p>
-    <p>Precio: $${producto.precio}</p>
-    <p>Disponibilidad: ${producto.disponibilidad ? 'Disponible' : 'No disponible'}</p>
-    <img src="${producto.img}" alt="${producto.nombre}">
-  `;
-}
-
-// Obtener el ID del producto desde los parámetros de la URL
-const params = getQueryParams();
-if (params.id) {
-  cargarProducto(params.id);
-} else {
-  document.getElementById('producto-detalle').innerHTML = 'ID de producto no proporcionado';
-}
 });
-
- */

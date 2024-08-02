@@ -553,6 +553,11 @@ body{
         height: 100%;
     }
 
+    .gift_mobile{
+        padding: 0;
+        margin: 10px;
+    }
+
     
 }
 
@@ -916,6 +921,13 @@ header:hover .contenedor_logo .logo_normal {
 
 .contenedor_lugar_soñado{
     margin-top: 140px;
+}
+
+.formulario_contacto div input{
+    width: 80%;
+}
+.formulario_contacto div textarea{
+    width: 80%;
 }
 
 }

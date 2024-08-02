@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../styles/thumbnailSlider.css">
+   
     <link rel="stylesheet" href="../micss.css">
     <script src="https://kit.fontawesome.com/944891a13e.js" crossorigin="anonymous"></script>
     <title>FINCA DEL SACRAMENTO</title>
@@ -70,9 +70,9 @@
                                 Nosotros
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item"  href="#">Historia</a></li>
-                                <li><a class="dropdown-item"  href="#">Valores</a></li>
-                                <li><a class="dropdown-item"  href="#">Compromisos</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="#">Historia</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="#">Valores</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="#">Compromisos</a></li>
 
                             </ul>
                         </li>
@@ -82,14 +82,14 @@
                                 Alojamiento
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" 
+                                <li><a class="dropdown-item" target="_blank"
                                         href="https://fincadelsacramento.com/cabanas/">Cabañas</a></li>
-                                <li><a class="dropdown-item"
+                                <li><a class="dropdown-item" target="_blank"
                                         href="https://fincadelsacramento.com/suite/">Suite</a></li>
-                                <li><a class="dropdown-item" 
+                                <li><a class="dropdown-item" target="_blank"
                                         href="https://fincadelsacramento.com/habitaciones-de-campo/">Habitaciones de
                                         campo</a></li>
-                                <li><a class="dropdown-item" 
+                                <li><a class="dropdown-item" target="_blank"
                                         href="https://fincadelsacramento.com/habitaciones-piscina/">Habitaciones
                                         piscina</a></li>
                             </ul>
@@ -104,7 +104,7 @@
 
 
                         <li class="nav-item ">
-                            <a class="nav-link"  href="/views/contacto.html">Contacto</a>
+                            <a class="nav-link"  href="#">Contacto</a>
                         </li>
                         <div class="row ms-2 contenedor_botones_nav">
                             <div class="col-6 p-0 d-none d-lg-block">
@@ -129,36 +129,43 @@
     </header>
 
     <main>
-        <section class="container mt-5">
-            <div class="contenedor_titulo" id="contenedor_titulo">
+  
+      <section class="container">
+        <div class="row">
 
-            </div>
-            <div class="row contenedor_general">
-                <div id="producto-detalle" class="col-12 col-md-6 container"></div>
+            <div class="col-12 col-md-6">
+                <h2>Contacto</h2>
+                <form action="" class="formulario_contacto">
+                    <div class="d-flex flex-column">
 
-                <div id="contenedor_imagenes" class="col-12 col-md-6 container">
-                    <div class="swiper mySwiper2" id="swiper">
-                        <div class="swiper-wrapper" id="contenedor_wrapper">
-
-
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
                     </div>
-                    <div thumbsSlider="" class="swiper2 mySwiper">
-                        <div class="swiper-wrapper" id="contenedor_wrapper2">
+                    <div class="d-flex flex-column">
 
-                        </div>
+                        <label for="nombre">Teléfono (opcional)</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su nombre completo">
                     </div>
+                    <div class="d-flex flex-column">
 
-                </div>
+                        <label for="nombre">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    <div class="d-flex flex-column">
+
+                        <label for="nombre">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            
+            <div class="col-12 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=XDp6ZCAvoMQtYmkG7" frameborder="0"></iframe>
             </div>
 
-
-
-        </section>
-
-      
+        </div>
+      </section>
 
     </main>
 
@@ -295,26 +302,7 @@
             );
         });
     </script>
-    <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-        });
-    </script> -->
+
 </body>
 
 </html>
